@@ -17,9 +17,12 @@ namespace API
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
+        //load appsetting.json
             Host.CreateDefaultBuilder(args)
+            //load host for api
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    // use startup class for additional config
                     webBuilder.UseStartup<Startup>();
                 });
     }
