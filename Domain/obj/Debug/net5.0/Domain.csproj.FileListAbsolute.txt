@@ -1,0 +1,12 @@
+C:\github\reac\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\github\reac\Domain\bin\Debug\net5.0\Domain.dll
+C:\github\reac\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\github\reac\Domain\bin\Debug\net5.0\Domain.pdb
+C:\github\reac\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\github\reac\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\reac\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\github\reac\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\github\reac\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\github\reac\Domain\obj\Debug\net5.0\Domain.dll
+C:\github\reac\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\github\reac\Domain\obj\Debug\net5.0\Domain.pdb

@@ -1,0 +1,15 @@
+C:\github\reac\Persistence\bin\Debug\net5.0\Persistence.deps.json
+C:\github\reac\Persistence\bin\Debug\net5.0\Persistence.dll
+C:\github\reac\Persistence\bin\Debug\net5.0\ref\Persistence.dll
+C:\github\reac\Persistence\bin\Debug\net5.0\Persistence.pdb
+C:\github\reac\Persistence\bin\Debug\net5.0\Domain.dll
+C:\github\reac\Persistence\bin\Debug\net5.0\Domain.pdb
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.csprojAssemblyReference.cache
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfoInputs.cache
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfo.cs
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.csproj.CoreCompileInputs.cache
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.csproj.CopyComplete
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.dll
+C:\github\reac\Persistence\obj\Debug\net5.0\ref\Persistence.dll
+C:\github\reac\Persistence\obj\Debug\net5.0\Persistence.pdb

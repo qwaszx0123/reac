@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Persistence;
 
 namespace API
 {
@@ -41,6 +43,16 @@ namespace API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
             });
+
+
+            //              00:07:05.970 ~ 00:07:12.570  services container or our configure services method which is our dependency injection container because
+            //  00:07:12.570 ~ 00:07:17.790  we want to make our data context available to other parts of our application and the ordering isn't
+            services.AddDbContext<DataContext>(opt =>
+            {
+                //here connect string   go to  configratuion to read
+                opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
+            });
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +78,11 @@ namespace API
             app.UseRouting();
 
             app.UseAuthorization();
+
+//  00:14:18.020 ~ 00:14:25.490  And then what we have is a call to use end points and this is going to map our controller points into
+//  00:14:25.490 ~ 00:14:26.200  our API.
+//  00:14:26.210 ~ 00:14:33.560  So there are API server knows what to do when a request comes into our API and how to route it to the
+//  00:14:33.560 ~ 00:14:34.880  appropriate controller.
 
             app.UseEndpoints(endpoints =>
             {

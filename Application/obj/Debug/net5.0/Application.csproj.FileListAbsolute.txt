@@ -1,0 +1,17 @@
+C:\github\reac\Application\bin\Debug\net5.0\Application.deps.json
+C:\github\reac\Application\bin\Debug\net5.0\Application.dll
+C:\github\reac\Application\bin\Debug\net5.0\ref\Application.dll
+C:\github\reac\Application\bin\Debug\net5.0\Application.pdb
+C:\github\reac\Application\bin\Debug\net5.0\Domain.dll
+C:\github\reac\Application\bin\Debug\net5.0\Persistence.dll
+C:\github\reac\Application\bin\Debug\net5.0\Domain.pdb
+C:\github\reac\Application\bin\Debug\net5.0\Persistence.pdb
+C:\github\reac\Application\obj\Debug\net5.0\Application.csprojAssemblyReference.cache
+C:\github\reac\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\reac\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\github\reac\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\github\reac\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+C:\github\reac\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+C:\github\reac\Application\obj\Debug\net5.0\Application.dll
+C:\github\reac\Application\obj\Debug\net5.0\ref\Application.dll
+C:\github\reac\Application\obj\Debug\net5.0\Application.pdb
