@@ -52,6 +52,22 @@ namespace API
                 //here connect string   go to  configratuion to read
                 opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+
+//  00:01:52.400 ~ 00:02:03.210  And in this case it's H TTP local hosts three thousand and this means that any request coming from our
+//  00:02:03.210 ~ 00:02:10.050  client application is going to be allowed to use any methods get post put whatever it is.
+//  00:02:10.050 ~ 00:02:18.800  And also any header as long as it's coming from local hace 3000 and what we also need to do now that
+//  00:02:18.800 ~ 00:02:27.160  we've added this as a service is we need to and this is middleware to our configure method because we
+//  00:02:27.160 ~ 00:02:35.140  need to modify the haze TTP response in some way here and our hasty DP response is going to have the
+
+
+           services.AddCors(opt => 
+            {
+                opt.AddPolicy("CorsPolicy", policy => 
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+                });
+            });
         
         }
 
@@ -83,6 +99,10 @@ namespace API
 //  00:14:25.490 ~ 00:14:26.200  our API.
 //  00:14:26.210 ~ 00:14:33.560  So there are API server knows what to do when a request comes into our API and how to route it to the
 //  00:14:33.560 ~ 00:14:34.880  appropriate controller.
+
+//add middle ware here to enable cors
+            app.UseCors("CorsPolicy");
+            // app.UseMvc();
 
             app.UseEndpoints(endpoints =>
             {

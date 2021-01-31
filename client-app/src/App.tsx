@@ -35,28 +35,35 @@ class App extends Component {
 
   // 00:00:59.430 ~ 00:01:04.950  And when we set state here we trigger a rebrand of our component.
 
-  // componentDidMount() {
-  //   axios.get('http://localhost:5000/api/values').then(response => {
-  //     this.setState({
-  //       values: response.data
-  //     });
-  //   });
-  // }
-
+  //get method return a promise
   componentDidMount() {
-    //  00:01:18.610 ~ 00:01:27.250  a we act component class method called this dot set state so that we can modify what's going on inside
-    this.setState({
-      values:[{
-        Id : 1,
-        Name : "Value 101"
-    },
-    {
-        Id :2,
-        Name : "Value 102"
-    }]
-    })
+    axios.get('http://localhost:5000/api/values').then(response => {
+      console.log(response);
+      this.setState({
+        values: response.data
+      });
+    });
   }
 
+
+  // 00:00:48.720 ~ 00:00:56.130  This is a good place to go and get some data from an API and what we do is we wait until the components
+  // 00:00:56.130 ~ 00:01:02.940  mounted go and fetch some data and then we call this set state to update the state.
+  // componentDidMount() {
+  //   //  00:01:18.610 ~ 00:01:27.250  a we act component class method called this dot set state so that we can modify what's going on inside
+  //   this.setState({
+  //     values:[{
+  //       Id : 1,
+  //       Name : "Value 101"
+  //   },
+  //   {
+  //       Id :2,
+  //       Name : "Value 102"
+  //   }]
+  //   })
+  // }
+
+
+  //becasue of loop should add    key in li   to avoid warning
   render() {
     return (
       <div>
@@ -70,14 +77,12 @@ class App extends Component {
           ))}
         </List>
 {/* use map to loop */}
-        <ul>
+        {/* <ul>
           {this.state.values.map((value : any)=>(
 
-            <li>{value.Name}</li>
+            <li key={value.Nam}>{value.Name}</li>
           ))}
-
-
-        </ul>
+        </ul> */}
       </div>
     );
   }
