@@ -64,6 +64,12 @@ class App extends Component {
 
 
   //becasue of loop should add    key in li   to avoid warning
+
+
+  // 00:04:02.200 ~ 00:04:07.600  It's going to contain an icon and semantic UI has access to funds.
+  // 00:04:07.640 ~ 00:04:09.590  Awesome icons by default.
+  // 00:04:09.620 ~ 00:04:16.940  When we use semantic UI react we already have access to the font awesome icon library and we can make
+  
   render() {
     return (
       <div>
