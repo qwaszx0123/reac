@@ -35,6 +35,7 @@ namespace API
                 {
                     var context = services.GetRequiredService<DataContext>();
                     context.Database.Migrate();
+                    Seed.SeedData(context);
  //                   00:03:49.090 ~00:03:52.660  we start our application we're going to check to see if we've got a database.
  //00:03:52.720 ~00:03:59.050  If not then one is going to be created based on our migrations and we're also going to add a catch block
  //00:03:59.050 ~00:03:59.860  here.

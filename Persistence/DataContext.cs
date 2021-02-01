@@ -23,6 +23,9 @@ namespace Persistence
     //  00:06:32.220 ~ 00:06:39.210  Now this values property is what's going to be used for the table name inside sequel lights and we'll
     //  00:06:39.210 ~ 00:06:44.550  see that when we actually go ahead and create our database so we have this in place what we need to
     
+     public DbSet<Activity> Activities { get; set; }
+
+
    protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Value>()
